@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(194, 37, 87);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  /* background-color: rgb(150, 50, 50); */
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.box1-container {
+  position: relative;
+  color: white;
+  flex: 1;
+  height: 100%;
+  background: url("./img/background.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 10px 0 0px 10px;
+}
+
+.box1-content {
+  position: absolute;
+  font-size: 2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.box2-container {
+  flex: 1.5;
+  background-color: rgb(80, 67, 117);
+  height: 100%;
+  border-radius: 0 10px 10px 0px;
+}
+
+.box2-content {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px rgb(194, 37, 87);
+  width: 30%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgb(80, 67, 117) inset;
+  -webkit-text-fill-color: white !important;
+}
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  background: rgb(194, 37, 87);
+  border-radius: 2px;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.weather-key {
+  display: block;
+  color: rgb(194, 37, 87);
+  font-size: 1.5rem;
+}
+
+.weather-key span {
+  color: rgb(194, 37, 87);
+}
+
+.weather-value {
+  color: white !important;
+}
+
+.weather-container {
+  width: 50%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.weather-error {
+  color: rgb(194, 37, 87);
+  font-size: 1.5rem;
+}
